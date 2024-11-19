@@ -563,8 +563,8 @@ else
         -g|--gui)
             check_deps
             exec udocker run -v "$(mktemp -d):/dev/shm" \
-              -v ${PWD}/downloads:/app/har_and_cookies \
-              -v ${PWD}/downloads:/app/generated_images \
+              -v ${PWD}/downloads:/app/downloads \
+              -v ${PWD}/downloads:/app/downloads \
               g4f gui
         ;;
 
