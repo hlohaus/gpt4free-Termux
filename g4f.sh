@@ -562,11 +562,9 @@ else
 
         -g|--gui)
             check_deps
-            exec udocker run g4f mkdir -p /app/har_and_cookies && mkdir -p /app/generated_images
-            exec udocker run -v "$(mktemp -d):/dev/shm" \
-            -v "${PWD}/har_and_cookies:har_and_cookies" \
-            -v "${PWD}/generated_images:generated_images" \
-            g4f g4f gui
+            exec udocker run g4f mkdir -p /app/har_and_cookies
+            exec udocker run g4f mkdir -p /app/generated_images
+            exec udocker run -v "$(mktemp -d):/dev/shm" -v "${PWD}/har_and_cookies:/app/har_and_cookies" -v "${PWD}/generated_images:/app/generated_images" g4f g4f gui
         ;;
 
         -c|--cmd)
