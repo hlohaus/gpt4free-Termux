@@ -565,7 +565,7 @@ else
             exec udocker run -v "$(mktemp -d):/dev/shm" \
              -v ${PWD}/downloads:/app/har_and_cookies \
              -v ${PWD}/downloads:/app/generated_images \
-              python -m g4f.cli gui -debug
+              g4f gui
         ;;
 
         -c|--cmd)
