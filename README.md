@@ -9,7 +9,7 @@ https://github.com/xtekky/gpt4free
 In Termux -
 
 ```
-curl -L https://raw.githubusercontent.com/hlohaus/gpt4free-Termux/tree/main/g4f.sh -o $PREFIX/bin/g4f.sh; chmod 755 $PREFIX/bin/g4f.sh
+curl -L https://raw.githubusercontent.com/hlohaus/gpt4free-Termux/refs/heads/main/g4f.sh -o $PREFIX/bin/g4f.sh; chmod 755 $PREFIX/bin/g4f.sh
 ```
 ```
 g4f.sh --help
