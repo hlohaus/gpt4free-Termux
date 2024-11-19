@@ -562,7 +562,7 @@ else
 
         -g|--gui)
             check_deps
-            exec udocker run -v "$(mktemp -d):/dev/shm" g4f g4f gui
+            exec udocker run -v "$(mktemp -d):/dev/shm" --shm-size="2g" g4f g4f gui
         ;;
 
         -c|--cmd)
